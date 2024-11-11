@@ -92,8 +92,7 @@ class _RadioButtonGroupState extends State<RadioButtonGroup> {
     List<Widget> content = [];
     for (int i = 0; i < widget.labels.length; i++) {
       Radio rb = Radio(
-        activeColor:
-            widget.activeColor ?? Theme.of(context).toggleableActiveColor,
+        activeColor: widget.activeColor ?? Theme.of(context).primaryColor,
         groupValue: widget.labels.indexOf(_selected),
         value: i,
 
